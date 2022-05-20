@@ -1,0 +1,12 @@
+.form_block{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 500px;
+    border: rgba(34, 60, 80, 0.18) 2px solid;
+    padding: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 8px 9px 8px 0px rgba(34, 60, 80, 0.18);
+    -moz-box-shadow: 8px 9px 8px 0px rgba(34, 60, 80, 0.18);
+    box-shadow: 8px 9px 8px 0px rgba(34, 60, 80, 0.18);
+}
