@@ -1,9 +1,12 @@
 import React from "react";
 import {useState, useEffect} from "react";
-import NavBar from "../Navigation/NavBar"
+import Moment from 'react-moment';
 import {Button, Table, Nav} from "react-bootstrap";
 import "./Main.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import DeleteIcon from "./../../Icons/x-close-delete.svg";
+import EditIcon from "./../../Icons/edit-write-alt.svg";
 
 function Main(){
 
@@ -42,9 +45,21 @@ function Main(){
                         <tr key={item.ObjectID}>
                             <td>{item.name}</td>
                             <td>{item.surname}</td>
-                            <td>{item.arrivaldate}</td>
+                            <td>
+                                <Moment format="YYYY-MM-DD">
+                                    {item.arrivaldate}
+                                </Moment>
+                            </td>
                             <td>{item.diagnosis}</td>
                             <td>{item.courses}</td>
+                            <td>
+                                <Button variant="danger" value={item.id}>
+                                    <img src={DeleteIcon}/>
+                                </Button>
+                                <Button variant="light" value={item.id}>
+                                    <img src={EditIcon}/>
+                                </Button>
+                            </td>
                         </tr>
                     ))}
                     </tbody>

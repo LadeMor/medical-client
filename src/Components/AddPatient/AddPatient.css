@@ -10,3 +10,10 @@
     -moz-box-shadow: 8px 9px 8px 0px rgba(34, 60, 80, 0.18);
     box-shadow: 8px 9px 8px 0px rgba(34, 60, 80, 0.18);
 }
+
+
+.form_block select{
+    border-color: rgba(34, 60, 80, 0.18);
+    height: 39px;
+    font-size: 17px;
+}
